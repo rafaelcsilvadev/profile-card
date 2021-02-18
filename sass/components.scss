@@ -1,0 +1,66 @@
+$fontFamily: "Noto Sans JP", Arial, sans-serif;
+$blue: #2eaee8;
+$white: #fff;
+$red: #ff0101;
+$black: #4e4e4e;
+
+@mixin button($background: #fff, $padding: 10px) {
+  @if $background == #fff {
+    background-color: $white;
+    color: $blue;
+    border: 2px solid $blue;
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  } @else {
+    background-color: $background;
+    color: $white;
+    border: 2px solid $background;
+    &:hover {
+      background: $white;
+      color: $background;
+    }
+  }
+
+  padding: $padding;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 700;
+}
+
+@mixin font($text: true, $color: #212121) {
+  @if $text == true {
+    font-size: 14px;
+    @media screen and (min-width: 400px) {
+      font-size: 16px;
+    }
+  } @else {
+    font-size: 16px;
+
+    @media screen and (min-width: 400px) {
+      font-size: 20px;
+    }
+  }
+
+  font-family: $fontFamily;
+  line-height: 1.8;
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin link($text: true, $color: #212121) {
+  font-size: 14px;
+  font-family: $fontFamily;
+  line-height: 1.8;
+  font-weight: 500;
+  color: $color;
+
+  &:hover {
+    border-bottom: 1px solid $color;
+  }
+
+  @media screen and (min-width: 400px) {
+    font-size: 16px;
+  }
+}

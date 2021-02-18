@@ -1,0 +1,13 @@
+@import './components.scss';
+
+.button{
+    @include button($background: $white);
+}
+
+.font{
+    @include font($text: true);
+}
+
+.link{
+    @include link();
+}
