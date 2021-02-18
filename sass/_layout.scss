@@ -1,13 +1,26 @@
-@import './components.scss';
-
-.button{
-    @include button($background: $white);
+.header {
+  background-color: $blue;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.font{
-    @include font($text: true);
+.footer {
+  @include font($color: $white);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray;
+
+  @media screen and (min-width: 560px) {
+    flex-direction: row;
+  }
 }
 
-.link{
-    @include link();
+.footer span {
+  margin: 0 10px;
 }

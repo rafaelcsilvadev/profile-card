@@ -2,7 +2,8 @@ $fontFamily: "Noto Sans JP", Arial, sans-serif;
 $blue: #2eaee8;
 $white: #fff;
 $red: #ff0101;
-$black: #4e4e4e;
+$black: #212121;
+$gray: #a5a5a5;
 
 @mixin button($background: #fff, $padding: 10px) {
   @if $background == #fff {
