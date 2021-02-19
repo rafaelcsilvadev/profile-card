@@ -4,6 +4,7 @@ $white: #fff;
 $red: #ff0101;
 $black: #212121;
 $gray: #a5a5a5;
+$transparent: rgba(33, 33, 33, 0.01);
 
 @mixin button($background: #fff, $padding: 10px) {
   @if $background == #fff {
@@ -25,7 +26,6 @@ $gray: #a5a5a5;
   }
 
   padding: $padding;
-  border-radius: 10px;
   outline: none;
   font-weight: 700;
 }
@@ -56,6 +56,7 @@ $gray: #a5a5a5;
   line-height: 1.8;
   font-weight: 500;
   color: $color;
+  border-bottom: 1px solid $transparent;
 
   &:hover {
     border-bottom: 1px solid $color;
@@ -64,4 +65,12 @@ $gray: #a5a5a5;
   @media screen and (min-width: 400px) {
     font-size: 16px;
   }
+}
+
+@mixin input() {
+  @include font();
+  width: 230px;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
 }
