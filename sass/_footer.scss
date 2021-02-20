@@ -1,12 +1,3 @@
-.header {
-  background-color: $blue;
-  padding: 5px 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer {
   @include font($color: $white);
   padding: 40px 0;
@@ -51,8 +42,4 @@
   @media screen and (min-width: 560px) {
     margin: 0 15px;
   }  
-}
-
-.link{
-  @include link();
 }
