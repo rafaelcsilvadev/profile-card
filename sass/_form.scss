@@ -8,17 +8,22 @@
 
 .input {
   @include input();
-  border-top: 2px solid $blue;
-  border-bottom: 2px solid $blue;
-  border-left: 2px solid $blue;
+  border-top: 2px solid $darkBlue;
+  border-bottom: 2px solid $darkBlue;
+  border-left: 2px solid $darkBlue;
+  margin: 0 0 0 20px;
 
   @media screen and (min-width: 600px) {
-    width: 500px;
+    margin: 0;
   }
 }
 
 .button {
-  @include button($background: $blue);
+  @include button($background: $darkBlue);
   height: 44px;
-  margin: 0 0 0 -10px;
+  margin: 0 20px 0 -10px;
+
+  @media screen and (min-width: 600px) {
+    margin: 0 0 0 -10px;
+  }
 }

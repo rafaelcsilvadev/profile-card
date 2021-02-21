@@ -1,13 +1,14 @@
 $fontFamily: "Noto Sans JP", Arial, sans-serif;
 $blue: #2eaee8;
+$darkBlue: #172244;
 $white: #fff;
 $red: #ff0101;
 $black: #212121;
 $gray: #a5a5a5;
 $transparent: rgba(33, 33, 33, 0.01);
 
-@mixin button($background: #fff, $padding: 10px) {
-  @if $background == #fff {
+@mixin button($background: 'light', $padding: 10px) {
+  @if $background == 'light' {
     background-color: $white;
     color: $blue;
     border: 2px solid $blue;
@@ -16,12 +17,12 @@ $transparent: rgba(33, 33, 33, 0.01);
       color: $white;
     }
   } @else {
-    background-color: $background;
+    background-color: $darkBlue;
     color: $white;
-    border: 2px solid $background;
+    border: 2px solid $darkBlue;
     &:hover {
       background: $white;
-      color: $background;
+      color: $darkBlue;
     }
   }
 
@@ -30,7 +31,7 @@ $transparent: rgba(33, 33, 33, 0.01);
   font-weight: 700;
 }
 
-@mixin font($text: true, $color: #212121) {
+@mixin font($text: true, $color: #fff) {
   @if $text == true {
     font-size: 14px;
     @media screen and (min-width: 400px) {
