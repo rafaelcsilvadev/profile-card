@@ -3,20 +3,20 @@ export enum UserStringsAction {
 }
 
 export interface UserState {
-  avatar_url?: string;
+  avatar_url: string;
   name: string;
-  bio?: string;
-  public_repos?: number;
-  followers?: number;
-  following?: number;
+  bio: string;
+  public_repos: number;
+  followers: number;
+  following: number;
 }
 
 export interface UserAction {
   type: string;
-  avatar_url?: string;
+  avatar_url: string;
   name: string;
-  bio?: string;
-  public_repos?: number;
-  followers?: number;
-  following?: number;
+  bio: string;
+  public_repos: number;
+  followers: number;
+  following: number;
 }

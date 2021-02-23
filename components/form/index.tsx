@@ -15,6 +15,16 @@ function Form({ userDispatch }: any) {
     await api
       .get(`/users/${user}`)
       .then((response) => {
+        if(!response){
+           newUser = {
+             avatar_url: "/images/load.svg",
+             name: "Carregando...",
+             bio: "Carregando...",
+             public_repos: 0,
+             followers: 0,
+             following: 0,
+           };
+        }
         newUser = {
           avatar_url: response.data.avatar_url,
           name: response.data.name,
@@ -37,8 +47,9 @@ function Form({ userDispatch }: any) {
 
           return newUser;
         }
-      });    
-
+      });  
+       
+        
     return userDispatch(newUser);
   };
 
