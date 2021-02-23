@@ -9,14 +9,14 @@ const INITIAL_STATE: UserState = {
   following: 0,
 };
 
-function userReducer(state = INITIAL_STATE, action: UserAction) {  
+function userReducer(state = INITIAL_STATE, action: UserAction) {
   switch (action.type) {
     case UserStringsAction.CHANGE_USER:
       return {
         avatar_url: action.avatar_url,
         name: action.name,
         bio: action.bio,
-        public_repos: action.public_repos | 0,
+        public_repos: action.public_repos,
         followers: action.followers,
         following: action.following,
       };
