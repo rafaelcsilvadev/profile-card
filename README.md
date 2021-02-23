@@ -6,7 +6,7 @@
 </p>
 
 <div>
-    <img src="./github/captura.png">
+    <img src="./github/layout.png">
 </div>
 
 <h2 id='objective'>Objetivo</h2>
