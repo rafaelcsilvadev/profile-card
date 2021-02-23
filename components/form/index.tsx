@@ -58,7 +58,7 @@ function Form({ userDispatch }: any) {
       <form onSubmit={handleShowUser} className={style.form}>
         <input
           type="text"
-          placeholder="Digita um nome de usuário"
+          placeholder="Digite um nome de usuário"
           className={style.input}
           value={user}
           onChange={(e) => setUser(e.target.value)}
