@@ -30,11 +30,17 @@
     <li>
         <a href="typescriptlang.org">TypeScript</a>
     </li>
+    <li>
+        <a href="https://api.github.com/">GitHub API</a>
+    </li>
+    <li>
+        <a href="https://github.com/axios/axios">Axios</a>
+    </li>
 </ul>
 
 <h2>
     Link do projeto:
 </h2>
 <p>
-    <a href="https://rafa-new-tic-tac-toe.herokuapp.com/">Profile Card</a>
+    <a href="https://profile-card-two-ebon.vercel.app/">Profile Card</a>
 </p>
