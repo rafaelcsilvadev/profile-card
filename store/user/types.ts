@@ -1,5 +1,5 @@
 export enum UserStringsAction {
-  CHANGE_USER = "@user/change_user",
+  CHANGE_USER = '@user/change_user',
 }
 
 export interface UserState {

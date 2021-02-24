@@ -1,4 +1,4 @@
-import { UserStringsAction, UserAction, UserState } from "./types";
+import { UserStringsAction, UserAction, UserState } from './types';
 
 export function changeUser(newUser: UserState): UserAction {
   return {

@@ -1,29 +1,29 @@
-import { FormEvent, useState, useEffect } from "react";
-import { Dispatch } from "redux";
-import style from "../../sass/main.module.scss";
-import { UserState } from "../../store/user/types";
-import * as UserActions from "../../store/user/actions";
-import api from "../../services/api";
-import { connect } from "react-redux";
+import { FormEvent, useState } from 'react';
+import { Dispatch } from 'redux';
+import { connect } from 'react-redux';
+import style from '../../sass/main.module.scss';
+import { UserState } from '../../store/user/types';
+import * as UserActions from '../../store/user/actions';
+import api from '../../services/api';
 
 function Form({ userDispatch }: any) {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState('');
 
   const handleShowUser = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    var newUser: UserState;
+    let newUser: UserState;
     await api
       .get(`/users/${user}`)
       .then((response) => {
-        if(!response){
-           newUser = {
-             avatar_url: "/images/load.svg",
-             name: "Carregando...",
-             bio: "Carregando...",
-             public_repos: 0,
-             followers: 0,
-             following: 0,
-           };
+        if (!response) {
+          newUser = {
+            avatar_url: '/images/load.svg',
+            name: 'Carregando...',
+            bio: 'Carregando...',
+            public_repos: 0,
+            followers: 0,
+            following: 0,
+          };
         }
         newUser = {
           avatar_url: response.data.avatar_url,
@@ -37,9 +37,9 @@ function Form({ userDispatch }: any) {
       .catch((error) => {
         if (error) {
           newUser = {
-            avatar_url: "/images/sad.svg",
-            name: "Sem dados.",
-            bio: "Infelizmente não conseguimos achar o usuário.",
+            avatar_url: '/images/sad.svg',
+            name: 'Sem dados.',
+            bio: 'Infelizmente não conseguimos achar o usuário.',
             public_repos: 0,
             followers: 0,
             following: 0,
@@ -47,9 +47,8 @@ function Form({ userDispatch }: any) {
 
           return newUser;
         }
-      });  
-       
-        
+      });
+
     return userDispatch(newUser);
   };
 

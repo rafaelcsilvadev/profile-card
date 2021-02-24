@@ -1,9 +1,9 @@
-import { UserState, UserStringsAction, UserAction } from "./types";
+import { UserState, UserStringsAction, UserAction } from './types';
 
 const INITIAL_STATE: UserState = {
-  avatar_url: "/images/smile.svg",
-  name: "Smile",
-  bio: "Informe um nome de usuário no campo acima.",
+  avatar_url: '/images/smile.svg',
+  name: 'Smile',
+  bio: 'Informe um nome de usuário no campo acima.',
   public_repos: 0,
   followers: 0,
   following: 0,

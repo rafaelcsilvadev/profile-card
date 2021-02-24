@@ -1,6 +1,6 @@
-import style from "../../sass/main.module.scss";
-import { connect } from "react-redux";
-import { UserState } from "../../store/user/types";
+import style from '../../sass/main.module.scss';
+import { connect } from 'react-redux';
+import { UserState } from '../../store/user/types';
 
 interface StateProps {
   userReducer: UserState;

@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
-import Form from "../components/form";
-import UserInfo from "../components/userInfo";
-import Head from "next/head";
+import Layout from '../components/layout';
+import Form from '../components/form';
+import UserInfo from '../components/userInfo';
+import Head from 'next/head';
 
 function Home() {
   return (

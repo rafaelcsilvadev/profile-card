@@ -1,14 +1,14 @@
-import "../sass/reset.scss";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "../store";
+import '../sass/reset.scss';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from '../store';
 
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Component {...pageProps} />
-      </PersistGate>      
+      </PersistGate>
     </Provider>
   );
 }
