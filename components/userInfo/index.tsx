@@ -18,7 +18,7 @@ function UserInfo({ userState }: any) {
       <div className={style.userData}>
         <h6>{userState.name}</h6>
         <p>{userState.location}</p>
-        <p>{userState.bio}.</p>
+        <p>{userState.bio}</p>
       </div>
       <div className={style.boxFollow}>
         <div>
