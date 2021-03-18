@@ -1,0 +1,80 @@
+.userInfo {
+  width: 300px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $white;
+  border-radius: 50px;
+
+  @media screen and (min-width: 400px) {
+    width: 400px;
+  }
+}
+
+.bgTop {
+  width: 300px;
+  height: 200px;
+  @media screen and (min-width: 400px) {
+    width: 400px;
+  }
+}
+
+.bgTop img {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px 50px 0 0;
+  z-index: 1;
+
+  @media screen and (min-width: 400px) {
+    width: 400px;
+  }
+}
+
+.avatar {
+  border: 5px solid $white;
+  height: 150px;
+  margin: -90px 0 0 0;
+  z-index: 9;
+}
+
+.avatar,
+.avatar img {
+  border-radius: 100px;
+}
+
+.userData {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.userData h6 {
+  @include font(false, $black);
+}
+
+.userData p {
+  @include font(true, $black);
+  margin: 0 10px;
+}
+
+.boxFollow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+  border-top: 0.5px solid $gray;
+  text-align: center;
+}
+
+.boxFollow h6,
+.boxFollow p {
+  @include font(true, $black);
+}
+
+.boxFollow h6 {
+  font-weight: 700;
+}
