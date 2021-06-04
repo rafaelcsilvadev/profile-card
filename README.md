@@ -11,7 +11,7 @@
 
 <h2 id='objective'>Objetivo</h2>
 <p>
-   Um site onde voce pode ver algumas informações de usuários do github. 
+   Um site onde você pode encontrar algumas informações de usuários do github. 
 </p>
 
 <h2 id='technologies'>
